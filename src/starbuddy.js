@@ -7,7 +7,7 @@ async function getStars() {
 // TASK #2: Add Event Listener
 function initialize() {
   // Replace the line below with your implementation.
-  throw new Error("Not implemented");
+  document.getElementById("count_stars").addEventListener("click", getStars);
 }
 
 initialize();
