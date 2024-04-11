@@ -9,10 +9,10 @@ async function getStars() {
       let json = await response.json();
       document.getElementById("star_count").innerHTML = json["stargazers_count"];
     } else {
-      document.getElementById("star_count").innerHTML = "An error has occurred";
+      document.getElementById("star_count").innerHTML = "an error has occurred";
     }
   } catch (error) {
-    document.getElementById("star_count").innerHTML = "An error has occurred";
+    document.getElementById("star_count").innerHTML = error;
   }
 }
 
